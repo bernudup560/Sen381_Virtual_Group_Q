@@ -427,3 +427,29 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# ---------- CivicConnect additions ----------
+
+# Local SQLite database files (created when you run the API)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Local settings and secrets (never commit these)
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+secrets.json
+.env.*
+*.key
+
+# JetBrains Rider
+.idea/
+
+# Operating system junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
