@@ -1,1 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
 
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Database engine: SQLite through Entity Framework Core (10.0.* = latest patch of version 10) -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Infrastructure implements Core's interfaces, so it references Core -->
+    <ProjectReference Include="..\CivicConnect.Core\CivicConnect.Core.csproj" />
+  </ItemGroup>
+
+</Project>
